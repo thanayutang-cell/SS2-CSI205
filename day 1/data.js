@@ -1,44 +1,44 @@
-// const invoiceName = "68036395_Thanayut Angkhanawin";
+const invoiceName = "68036395_Thanayut Angkhanawin";
 
-// const invoiceNumber = "NO. 000001";
+const invoiceNumber = "NO. 000001";
 
-// const invoiceDate = "02 June,2030";
-
-
-// /* Company Logo */
-
-// const companyLogo = "/day 1/logo/spulogo.png";
+const invoiceDate = "02 June,2030";
 
 
-// /* Bill To */
+/* Company Logo */
 
-// const billToName = "Studio Shodwe";
-
-// const billToAddress = "123 Anywhere St..AnyCity";
-
-// const billToEmail = "hello@reallygreatsite.com";
+const companyLogo = "/day 1/logo/spulogo.png";
 
 
-// /* From */
+/* Bill To */
 
-// const fromName = "Oilvia Wilson";
+const billToName = "Studio Shodwe";
 
-// const fromAddress = "123 Anywhere St., AnyCity";
+const billToAddress = "123 Anywhere St..AnyCity";
 
-// const fromEmail = "hello@reallygreatsite.com";
-
-
-// /* Items */
-
-// const invoiceItems = [
-//     ["Logo", 1, "$500", "$500"],
-//     ["Banner", 2, "$45", "$90"],
-//     ["Poster", 3, "$55", "$165"]
-// ];
+const billToEmail = "hello@reallygreatsite.com";
 
 
-// const invoiceTotal = "$755";
+/* From */
 
-// const invoicePayment = "Cash";
+const fromName = "Oilvia Wilson";
 
-// const invoiceNote = "Thank you for choosing us!";
+const fromAddress = "123 Anywhere St., AnyCity";
+
+const fromEmail = "hello@reallygreatsite.com";
+
+
+/* Items */
+
+const invoiceItems = [
+    ["Logo", 1, "$500", "$500"],
+    ["Banner", 2, "$45", "$90"],
+    ["Poster", 3, "$55", "$165"]
+];
+
+
+const invoiceTotal = "$755";
+
+const invoicePayment = "Cash";
+
+const invoiceNote = "Thank you for choosing us!";
