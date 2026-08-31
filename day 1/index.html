@@ -18,27 +18,35 @@
             <p id="name">[name]</p>
         </div>
 
+
         <!-- Logo + Invoice Number -->
         <div class="invoice-header">
 
-            <img src="/day 1/logo/spulogo.png" alt="">
+            <div id="companyLogo">
+                <span class="placeholder">[logo-company]</span>
+            </div>
 
             <p id="invoiceNumber">[invoice-number]</p>
 
         </div>
+
 
         <!-- Invoice -->
         <div class="invoice-title">
             <p><b>INVOICE</b></p>
         </div>
 
+
         <!-- Date -->
         <div class="date">
+
             <p>
                 <b>Date :</b>
                 <span id="date">[date]</span>
             </p>
+
         </div>
+
 
         <!-- Bill To + From -->
         <div class="info-section">
@@ -49,10 +57,13 @@
                 <p><b>Bill To :</b></p>
 
                 <p id="billToName">[name]</p>
+
                 <p id="billToAddress">[bill]</p>
+
                 <p id="billToEmail">[gmailbill]</p>
 
             </div>
+
 
             <!-- From -->
             <div class="info-box">
@@ -60,12 +71,15 @@
                 <p><b>From :</b></p>
 
                 <p id="fromName">[name]</p>
+
                 <p id="fromAddress">[bill]</p>
+
                 <p id="fromEmail">[gmailbill]</p>
 
             </div>
 
         </div>
+
 
         <!-- Table -->
         <div class="table-container">
@@ -73,11 +87,14 @@
             <table>
 
                 <tr class="table-header">
+
                     <th>Item</th>
                     <th>Quantity</th>
                     <th>Price</th>
                     <th>Amount</th>
+
                 </tr>
+
 
                 <tbody id="items">
 
@@ -89,6 +106,7 @@
 
                 </tbody>
 
+
                 <tr class="total">
 
                     <td></td>
@@ -99,15 +117,6 @@
                 </tr>
 
             </table>
-
-        </div>
-
-        <!-- Signature -->
-        <div class="signature">
-
-            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Michael_Jackson_signature.svg/500px-Michael_Jackson_signature.svg.png"
-                alt="">
 
         </div>
 
@@ -128,7 +137,8 @@
 
     </div>
 
-    <!-- ต้อง data.js ก่อน script.js -->
+
+    <!-- JavaScript -->
     <script src="./data.js"></script>
     <script src="./script.js"></script>
 

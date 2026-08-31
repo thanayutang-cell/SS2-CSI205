@@ -29,7 +29,7 @@ showData(
     typeof invoiceName !== "undefined"
         ? invoiceName
         : undefined,
-    "name"
+    "nametxt"
 );
 
 
@@ -55,6 +55,28 @@ showData(
 );
 
 
+/* Company Logo */
+
+const logoElement = document.getElementById("companyLogo");
+
+if (
+    typeof companyLogo !== "undefined" &&
+    companyLogo !== ""
+) {
+
+    logoElement.innerHTML = `
+        <img src="${companyLogo}" alt="Company Logo">
+    `;
+
+} else {
+
+    logoElement.innerHTML = `
+        <span class="placeholder">[logo-company]</span>
+    `;
+
+}
+
+
 /* Bill To */
 
 showData(
@@ -62,7 +84,7 @@ showData(
     typeof billToName !== "undefined"
         ? billToName
         : undefined,
-    "name"
+    "bill-to-name"
 );
 
 showData(
@@ -70,7 +92,7 @@ showData(
     typeof billToAddress !== "undefined"
         ? billToAddress
         : undefined,
-    "bill"
+    "bill-to-address"
 );
 
 showData(
@@ -78,7 +100,7 @@ showData(
     typeof billToEmail !== "undefined"
         ? billToEmail
         : undefined,
-    "gmailbill"
+    "bill-to-email"
 );
 
 
@@ -89,7 +111,7 @@ showData(
     typeof fromName !== "undefined"
         ? fromName
         : undefined,
-    "name"
+    "from-name"
 );
 
 showData(
@@ -97,7 +119,7 @@ showData(
     typeof fromAddress !== "undefined"
         ? fromAddress
         : undefined,
-    "bill"
+    "from-address"
 );
 
 showData(
@@ -105,19 +127,33 @@ showData(
     typeof fromEmail !== "undefined"
         ? fromEmail
         : undefined,
-    "gmailbill"
+    "from-email"
 );
 
 
 /* Total */
 
-showData(
-    "total",
-    typeof invoiceTotal !== "undefined"
-        ? invoiceTotal
-        : undefined,
-    "total"
-);
+/* Total */
+
+/* Total */
+
+const totalElement = document.getElementById("total");
+const totalRow = totalElement.closest("tr");
+
+if (
+    typeof invoiceTotal !== "undefined" &&
+    invoiceTotal !== ""
+) {
+
+    totalElement.textContent = invoiceTotal;
+    totalRow.querySelector("td:nth-child(3)").textContent = "Total";
+    totalRow.classList.remove("no-data");
+
+} else {
+
+    totalRow.remove();
+
+}
 
 
 /* Payment */

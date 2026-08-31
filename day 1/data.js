@@ -1,9 +1,16 @@
-// // const invoiceName = "Thanayut Angkhanawin";
+// const invoiceName = "68036395_Thanayut Angkhanawin";
 
 // const invoiceNumber = "NO. 000001";
 
 // const invoiceDate = "02 June,2030";
 
+
+// /* Company Logo */
+
+// const companyLogo = "/day 1/logo/spulogo.png";
+
+
+// /* Bill To */
 
 // const billToName = "Studio Shodwe";
 
@@ -12,12 +19,16 @@
 // const billToEmail = "hello@reallygreatsite.com";
 
 
+// /* From */
+
 // const fromName = "Oilvia Wilson";
 
 // const fromAddress = "123 Anywhere St., AnyCity";
 
 // const fromEmail = "hello@reallygreatsite.com";
 
+
+// /* Items */
 
 // const invoiceItems = [
 //     ["Logo", 1, "$500", "$500"],

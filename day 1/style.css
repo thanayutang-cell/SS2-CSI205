@@ -7,6 +7,7 @@ body {
     text-align: center;
 }
 
+
 .invoice {
     max-width: 800px;
 
@@ -36,7 +37,7 @@ body {
 }
 
 
-/* Header */
+/* Logo + Invoice Number */
 
 .invoice-header {
     display: flex;
@@ -48,12 +49,16 @@ body {
     width: 100%;
 }
 
-.invoice-header img {
+#companyLogo img {
     width: 100px;
     height: auto;
 }
 
-.invoice-header p {
+#companyLogo {
+    text-align: left;
+}
+
+.invoice-header > p {
     margin: 0;
 }
 
