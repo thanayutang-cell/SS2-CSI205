@@ -1,42 +1,33 @@
-const invoiceData = {
-    name: "Thanayut Angkhanawin",
+// // const invoiceName = "Thanayut Angkhanawin";
 
-    invoiceNumber: "NO. 000001",
+// const invoiceNumber = "NO. 000001";
 
-    date: "02 June, 2030",
+// const invoiceDate = "02 June,2030";
 
-    from: {
-        name: "Oilvia Wilson",
-        address: "123 Anywhere St., AnyCity",
-        email: "hello@reallygreatsite.com"
-    },
 
-    items: [
-        {
-            name: "Logo",
-            quantity: 1,
-            price: 500,
-            amount: 500
-        },
+// const billToName = "Studio Shodwe";
 
-        {
-            name: "Banner",
-            quantity: 2,
-            price: 45,
-            amount: 90
-        },
+// const billToAddress = "123 Anywhere St..AnyCity";
 
-        {
-            name: "Poster",
-            quantity: 3,
-            price: 55,
-            amount: 165
-        }
-    ],
+// const billToEmail = "hello@reallygreatsite.com";
 
-    total: 755,
 
-    paymentMethod: "Cash",
+// const fromName = "Oilvia Wilson";
 
-    note: "Thank you for choosing us!"
-};
+// const fromAddress = "123 Anywhere St., AnyCity";
+
+// const fromEmail = "hello@reallygreatsite.com";
+
+
+// const invoiceItems = [
+//     ["Logo", 1, "$500", "$500"],
+//     ["Banner", 2, "$45", "$90"],
+//     ["Poster", 3, "$55", "$165"]
+// ];
+
+
+// const invoiceTotal = "$755";
+
+// const invoicePayment = "Cash";
+
+// const invoiceNote = "Thank you for choosing us!";

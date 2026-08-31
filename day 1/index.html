@@ -4,109 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Invoice</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<div class="invoice">
+    <div class="invoice">
 
-    <!-- Company -->
-    <div class="top">
-
-        <div>
-            <h1 id="companyName"></h1>
-            <p id="companyAddress"></p>
+        <!-- Name -->
+        <div class="name">
+            <p id="name">[name]</p>
         </div>
 
-        <h1 class="invoice-title">INVOICE</h1>
+        <!-- Logo + Invoice Number -->
+        <div class="invoice-header">
+
+            <img src="/day 1/logo/spulogo.png" alt="">
+
+            <p id="invoiceNumber">[invoice-number]</p>
+
+        </div>
+
+        <!-- Invoice -->
+        <div class="invoice-title">
+            <p><b>INVOICE</b></p>
+        </div>
+
+        <!-- Date -->
+        <div class="date">
+            <p>
+                <b>Date :</b>
+                <span id="date">[date]</span>
+            </p>
+        </div>
+
+        <!-- Bill To + From -->
+        <div class="info-section">
+
+            <!-- Bill To -->
+            <div class="info-box">
+
+                <p><b>Bill To :</b></p>
+
+                <p id="billToName">[name]</p>
+                <p id="billToAddress">[bill]</p>
+                <p id="billToEmail">[gmailbill]</p>
+
+            </div>
+
+            <!-- From -->
+            <div class="info-box">
+
+                <p><b>From :</b></p>
+
+                <p id="fromName">[name]</p>
+                <p id="fromAddress">[bill]</p>
+                <p id="fromEmail">[gmailbill]</p>
+
+            </div>
+
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+
+            <table>
+
+                <tr class="table-header">
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                </tr>
+
+                <tbody id="items">
+
+                    <tr>
+                        <td colspan="4" class="placeholder">
+                            [items]
+                        </td>
+                    </tr>
+
+                </tbody>
+
+                <tr class="total">
+
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td id="total">[total]</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- Signature -->
+        <div class="signature">
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Michael_Jackson_signature.svg/500px-Michael_Jackson_signature.svg.png"
+                alt="">
+
+        </div>
+
+        <!-- Payment -->
+        <div class="payment">
+
+            <p>
+                <b>Payment method :</b>
+                <span id="paymentMethod">[payment-method]</span>
+            </p>
+
+            <p>
+                <b>Note :</b>
+                <span id="note">[note]</span>
+            </p>
+
+        </div>
 
     </div>
 
-
-    <!-- Customer information -->
-    <div class="information">
-
-        <!-- Bill To -->
-        <div>
-            <h3>Bill To</h3>
-            <p id="billToName"></p>
-            <p id="billToAddress"></p>
-        </div>
-
-
-        <!-- Ship To -->
-        <div>
-            <h3>Ship To</h3>
-            <p id="shipToName"></p>
-            <p id="shipToAddress"></p>
-        </div>
-
-
-        <!-- Invoice information -->
-        <div class="invoice-info">
-
-            <div>
-                <b>Invoice #</b>
-                <span id="invoiceId"></span>
-            </div>
-
-            <div>
-                <b>Invoice Date</b>
-                <span id="invoiceDate"></span>
-            </div>
-
-            <div>
-                <b>P.O.#</b>
-                <span id="poNumber"></span>
-            </div>
-
-            <div>
-                <b>Due Date</b>
-                <span id="dueDate"></span>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- Items -->
-    <table>
-
-        <thead>
-            <tr>
-                <th>QTY</th>
-                <th>DESCRIPTION</th>
-                <th>UNIT PRICE</th>
-                <th>AMOUNT</th>
-            </tr>
-        </thead>
-
-        <tbody id="items">
-        </tbody>
-
-    </table>
-
-
-    <!-- Terms -->
-    <div class="terms">
-
-        <h3>Terms & Conditions</h3>
-
-        <p id="terms"></p>
-
-    </div>
-
-</div>
-
-
-<!-- สำคัญ: data.js ต้องมาก่อน script.js -->
-<script src="data.js"></script>
-<script src="script.js"></script>
+    <!-- ต้อง data.js ก่อน script.js -->
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
