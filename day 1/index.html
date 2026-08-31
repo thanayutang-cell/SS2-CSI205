@@ -1,87 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style =text-align:center;align-items:center;>
-    <div style="display: block;max-width: 800px; height: auto; background-color: #f2f2f2;margin: 0 auto; padding: 20px; border-radius: 10px;">
-    <div style="font-size: 50px;text-align: center;">
-        <span>
-            <p>Thanayut Angkhanawin</p>
-        </span>
-    </div>
-    <div style ="display:flex; justify-content:space-between; width: 100%;">
-     <img style="width: 100px; height: auto;" src="/day 1/logo/spulogo.png" alt="">
-    <p>NO. 000001</p>
-    </div>
-    <br>
-    <div style="font-size: 50px;text-align: left;">
-        <p><b>INVOICE</b></p>
-    </div>
-    <br>
-    <div style="text-align: left;">
-        <p><b>Date :</b> 02 June,2030</p>
-    </div>
-    <br>
-    <div class="main-3";style="display:inline-block; justify-content:space-between; width: 100%;margin: 0 auto;">
 
-    <div class="second-1" style="display: inline-block; width: 45%; vertical-align: top;">
-        <!-- <p><b>Billed to :</b></p>
-        <p>Studio Shodwe </p>
-        <p>123 Anywhere St..AnyCity</p>
-        <p>hello@reallygreatsite.com</p> -->
-    </div>      
-    <div class="second-1" style="display: inline-block; width: 45%; vertical-align: top;">
-            <p><b>From : </b></p>
-            <p>Oilvia Wilson</p>
-            <p>123 Anywhere St., AnyCity</p>
-            <p>hello@reallygreatsite.com</p>
+    <title>Invoice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="invoice">
+
+    <!-- Company -->
+    <div class="top">
+
+        <div>
+            <h1 id="companyName"></h1>
+            <p id="companyAddress"></p>
         </div>
+
+        <h1 class="invoice-title">INVOICE</h1>
+
     </div>
-    <div style="margin: auto;align-items: center; width: 100%; text-align: center;">
-        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;border: 1px solid #000;">
-            <tr style="background-color: #1d19191c;">
-                <th>Item</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Amount</th>
-            </tr>
+
+
+    <!-- Customer information -->
+    <div class="information">
+
+        <!-- Bill To -->
+        <div>
+            <h3>Bill To</h3>
+            <p id="billToName"></p>
+            <p id="billToAddress"></p>
+        </div>
+
+
+        <!-- Ship To -->
+        <div>
+            <h3>Ship To</h3>
+            <p id="shipToName"></p>
+            <p id="shipToAddress"></p>
+        </div>
+
+
+        <!-- Invoice information -->
+        <div class="invoice-info">
+
+            <div>
+                <b>Invoice #</b>
+                <span id="invoiceId"></span>
+            </div>
+
+            <div>
+                <b>Invoice Date</b>
+                <span id="invoiceDate"></span>
+            </div>
+
+            <div>
+                <b>P.O.#</b>
+                <span id="poNumber"></span>
+            </div>
+
+            <div>
+                <b>Due Date</b>
+                <span id="dueDate"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Items -->
+    <table>
+
+        <thead>
             <tr>
-                <td>Logo</td>
-                <td>1</td>
-                <td>$500</td>
-                <td>$500</td>
+                <th>QTY</th>
+                <th>DESCRIPTION</th>
+                <th>UNIT PRICE</th>
+                <th>AMOUNT</th>
             </tr>
-            <tr>
-                <td>Banner</td>
-                <td>2</td>
-                <td>$45</td>
-                <td>$90</td>
-            </tr>
-            <tr>
-                <td>Poster</td>
-                <td> 3</td>
-                <td>$55</td>
-                <td>$165</td>
-            </tr>
-            <tr style="background-color: transparent;border-top: 1px solid black;border-bottom: 1px solid black;"`>
-                <td> </td>
-                <td> </td>
-                <td>Total</td>
-                <td >$755</td>
-            </tr>
-        </table>
+        </thead>
+
+        <tbody id="items">
+        </tbody>
+
+    </table>
+
+
+    <!-- Terms -->
+    <div class="terms">
+
+        <h3>Terms & Conditions</h3>
+
+        <p id="terms"></p>
+
     </div>
-    <div style="display: flex;align-items :center; justify-content:flex-end; width: 100%; margin-top: 20px;">
-        <img style="width: 100px; height: auto;margin-top: 28px;align-items: right;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Michael_Jackson_signature.svg/500px-Michael_Jackson_signature.svg.png?utm_source=th.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="">
-    </div>
-    <br>
-    <div style="text-align: left;">
-        <p><b>Payment method :</b> Cash</p>
-        <p><b>Note :</b> Thank you for choosing us!</p>
-    </div>
-    </div>
+
+</div>
+
+
+<!-- สำคัญ: data.js ต้องมาก่อน script.js -->
+<script src="data.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>

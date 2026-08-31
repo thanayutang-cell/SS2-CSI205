@@ -1,0 +1,125 @@
+body {
+margin: 0;
+padding: 20px;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+.invoice {
+max-width: 800px;
+height: auto;
+margin: 0 auto;
+padding: 20px;
+background-color: #f2f2f2;
+border-radius: 10px;
+box-sizing: border-box;
+}
+
+.name {
+font-size: 50px;
+text-align: center;
+}
+
+.name p {
+margin: 10px 0;
+}
+
+.invoice-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
+.invoice-header img {
+width: 100px;
+height: auto;
+}
+
+.invoice-header p {
+margin: 0;
+}
+
+.invoice-title {
+font-size: 50px;
+text-align: left;
+}
+
+.invoice-title p {
+margin: 20px 0;
+}
+
+.date {
+text-align: left;
+}
+
+.date p {
+margin: 10px 0;
+}
+
+.info-section {
+display: flex;
+justify-content: space-between;
+width: 100%;
+margin: 0 auto;
+}
+
+.info-box {
+width: 45%;
+text-align: left;
+}
+
+.info-box p {
+margin: 8px 0;
+}
+
+.table-container {
+width: 100%;
+margin: 20px auto 0;
+text-align: center;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+border: 1px solid #000;
+}
+
+th,
+td {
+padding: 10px;
+border: 1px solid #000;
+}
+
+.table-header {
+background-color: #e5e5e5;
+}
+
+.total {
+background-color: transparent;
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+}
+
+.signature {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 100%;
+margin-top: 20px;
+}
+
+.signature img {
+width: 100px;
+height: auto;
+margin-top: 28px;
+}
+
+.payment {
+text-align: left;
+margin-top: 10px;
+}
+
+.payment p {
+margin: 8px 0;
+}
