@@ -13,15 +13,13 @@ const init = () => {
     second = '0'
     operator = '?'
 }
-const insertSeparator = (str , separator = '', groupSize = 3) => {
+const insertSeparator = (str , separator = ',', groupSize = 3) => {
     let resultString = ''
     let counter = 0
     for(let i = str.length - 1; i >= 0; i--){
         resultString = str[i] + resultString
         counter ++
-        if( counter !== 0 && counter++ % groupSize === 2){
-            resultString = separator + resultString
-        }
+        if(counter % groupSize === 0) {  resultString = separator + resultString}
     }
     return resultString
 }
@@ -29,7 +27,7 @@ const render =() => {
     //display on screen
     document.getElementById('screen').innerText = display
 }
-const numberClick = (num) => 
+const numberClick = (num) => {
     console.log(num);
     switch(state){
         case 'first':
@@ -44,13 +42,16 @@ const numberClick = (num) =>
             break;
         case 'second':
             break;
+
+}
+    render()
 }
 
 
 
-const numberClick = (num) => {
-    console.log(num);
-}
+// const numberClick = (num) => {
+//     console.log(num);
+// }
 const operatorClick = (operator) => {
     console.log(operator);
 }

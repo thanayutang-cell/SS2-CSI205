@@ -14,6 +14,7 @@ body{
         border: 2px solid black;
         border-radius: 18px 18px 0 0;
         background-color: rgb(100, 98, 98);
+        height: 21.5rem;
         .inner{
             border: 2px solid gray;
             border-radius: 15px;
@@ -27,9 +28,9 @@ body{
                 height: 2.5rem;
                 text-align: right;
                 padding: 0.25rem 0.5rem;
-                display: flex;
+                display: grid;
                 align-items: center;
-                justify-content: end;
+                justify-content: end;}
                 .btn-row{
                     margin-top: 10px;
                     button{
@@ -54,7 +55,7 @@ body{
                         font-size: 1.15rem;
                     }
                 }
-            }
+            
         }
     }
 }
