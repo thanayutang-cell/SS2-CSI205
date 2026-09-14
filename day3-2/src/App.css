@@ -76,6 +76,7 @@ body {
 .buttons .run {
   background: #198754;
   color: white;
+  margin: 50px;
 
   border: none;
 }
@@ -91,4 +92,11 @@ body {
 /* Hover */
 .buttons button:hover {
   opacity: 0.8;
+}
+/* ปรับขนาดรูป */
+.object img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
 }

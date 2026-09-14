@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-
+import human from './assets/peeToo.png'
 function App() {
 
   const [type, setType] = useState('None')
@@ -10,17 +10,22 @@ function App() {
     Basketball: '🏀',
     Football: '⚽',
     Volleyball: '🏐',
-    Human: '👨',
+    Human: human,
     Cartoon: '🐶',
     Logo: '👻'
   }
 
   return (
     <div className="container">
+      <div>
+        <h1>68036395 thanayut Angkhanawinß</h1>
+      </div>
 
       <div className="stage">
         <div className={`object ${type === 'None' ? 'none' : ''}`}>
-          {objects[type]}
+          {type === 'Human' ? (
+          <img src={objects[type]} alt="Human" />
+            ) : (objects[type])}
         </div>
       </div>
 
