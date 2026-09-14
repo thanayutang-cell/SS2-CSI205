@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Counter from './companant/Counter'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 
 function App() {
