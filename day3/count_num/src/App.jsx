@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
+import Counter from './companant/Counter'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>68036395 thanayut Angkhanwin</h1>
-      
+      <h1 className='text-center' style ={{}}>68036395 thanayut Angkhanwin</h1>
+      <Counter name={'A'} step={1}/>
+      <Counter name={'B'} step={5} limit={100}/>
     </>
   )
 }
