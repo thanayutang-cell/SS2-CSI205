@@ -4,99 +4,188 @@ body {
   background: white;
 }
 
+
+/* =========================
+   Container
+========================= */
+
 .container {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
 }
 
-/* พื้นที่ไม้ */
-.stage {
-  width: 100%;
-  height: 300px;
 
-  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+/* =========================
+   ชื่อ
+========================= */
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 10px 0 25px;
+}
+
+
+/* =========================
+   กรอบสนาม
+========================= */
+
+.stage {
+  position: relative;
+
+  width: 100%;
+  height: 400px;
+
   background-color: #d9a96e;
 
   border: 3px solid #8b5a2b;
-  border-radius: 5px;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   Object
+========================= */
+
+.object {
+  position: absolute;
+
+  width: 80px;
+  height: 80px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  box-sizing: border-box;
+  font-size: 60px;
+
+  user-select: none;
+
+  transition: transform 0.4s ease;
 }
 
-/* ลูกบอล / Object */
-.object {
-  width: 90px;
-  height: 90px;
+
+/* =========================
+   Human
+========================= */
+
+.object img {
+  width: 80px;
+  height: 80px;
+
+  object-fit: cover;
 
   border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 65px;
 }
 
-/* ตอน None */
+
+/* =========================
+   None
+========================= */
+
 .object.none {
+  width: 70px;
+  height: 70px;
+
   background-color: #9dd7ed;
+
   border: 1px solid #777;
+
+  border-radius: 50%;
 
   font-size: 0;
 }
 
-/* ปุ่ม */
+
+/* =========================
+   ปุ่มทั้งหมด
+========================= */
+
 .buttons {
   display: flex;
-  justify-content: center;
+
   align-items: center;
 
-  gap: 5px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
-.buttons button {
-  font-size: 10px;
 
-  padding: 3px 7px;
+/* =========================
+   RUN
+========================= */
 
-  border: 1px solid #aaa;
-  border-radius: 3px;
+.run {
+  flex-shrink: 0;
 
-  background: white;
+  margin-right: 10px;
+
+  padding: 6px 12px;
+
+  background: #198754;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 4px;
+
+  font-size: 12px;
+
   cursor: pointer;
 }
 
-/* RUN */
-.buttons .run {
-  background: #198754;
-  color: white;
-  margin: 50px;
 
-  border: none;
+/* RUN ตอนกำลังทำงาน */
+
+.run.stop {
+  background: #dc3545;
 }
+
+
+/* =========================
+   Object Buttons
+========================= */
+
+.object-buttons {
+  display: flex;
+
+  gap: 5px;
+}
+
+
+.object-buttons button {
+  padding: 5px 9px;
+
+  background: white;
+
+  color: #0d6efd;
+
+  border: 1px solid #0d6efd;
+
+  border-radius: 4px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
 
 /* ปุ่มที่เลือก */
-.buttons button.active {
+
+.object-buttons button.active {
   background: #0d6efd;
+
   color: white;
-
-  border-color: #0d6efd;
 }
 
-/* Hover */
-.buttons button:hover {
+
+/* =========================
+   Hover
+========================= */
+
+button:hover {
   opacity: 0.8;
-}
-/* ปรับขนาดรูป */
-.object img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 50%;
 }
